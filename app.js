@@ -8,7 +8,7 @@ const tagsRouter = require("./routers/tagsRouter.js");
 const notFoundHandler = require("./middlewares/notFoundHandle.js");
 const errorHandler = require("./middlewares/errorHandler.js");
 
-//middlewares generici
+//Middlewares generici
 app.use(express.json());
 
 //Rotte
@@ -20,7 +20,7 @@ app.use("/posts", postsRouter);
 app.use("/categories", categoriesRouter);
 app.use("/tags", tagsRouter);
 
-//middlewares per la gestione degli errori
+//Middlewares per la gestione degli errori
 app.use(errorHandler);
 app.use(notFoundHandler);
 
